@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="card" style="width: 18rem;">
+        <img src="{{ products.image_url }}" alt="some">
+        <div class="card-body">
+            <h5 class="card-title">{{ products.name }}</h5>
+            <p class="card-text"><a href="{{ products.description }}" target="_blank">For more Info</a></p>
+            <a href="#" class="btn btn-primary">Add to Cart</a>
+        </div>
+    </div>
+
+{% endblock %}
